@@ -22,6 +22,8 @@ public class StudyFunc3 : MonoBehaviour
             if (GetHp() > 50)
                 return "°ø°Ý";
             else if (GetHp() > 20)
+                return "±¤Æø";
+            else if (GetHp() > 0)
                 return "µµ¸Á";
 
             else
