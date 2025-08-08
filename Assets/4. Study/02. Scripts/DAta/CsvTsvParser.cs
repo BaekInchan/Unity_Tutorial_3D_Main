@@ -46,6 +46,8 @@ public class CsvTsvParser : MonoBehaviour
             CharacterData characterData = new CharacterData(cols[0], cols[1], int.Parse(cols[2]), int.Parse(cols[3]));
 
             characters.Add(characterData);
+
+
         }
     }
 }
