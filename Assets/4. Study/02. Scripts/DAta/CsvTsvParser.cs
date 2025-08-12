@@ -24,8 +24,8 @@ public class CsvTsvParser : MonoBehaviour
 
     private void Start()
     {
-        //var dataFile = Resources.Load<TextAsset>("CsvData");
-        var dataFile = Resources.Load<TextAsset>("TsvData");
+        var dataFile = Resources.Load<TextAsset>("CsvData");
+        //var dataFile = Resources.Load<TextAsset>("TsvData");
         string data = dataFile.text;
 
         ParsingCharacterData(data);
@@ -40,8 +40,8 @@ public class CsvTsvParser : MonoBehaviour
 
         for (int i = 1; i < rows.Length; i++)
         {
-            //string[] cols = rows[i].Split(',');
-            string[] cols = rows[i].Split('\t');
+            string[] cols = rows[i].Split(',');
+            //string[] cols = rows[i].Split('\t');
 
             CharacterData characterData = new CharacterData(cols[0], cols[1], int.Parse(cols[2]), int.Parse(cols[3]));
 
