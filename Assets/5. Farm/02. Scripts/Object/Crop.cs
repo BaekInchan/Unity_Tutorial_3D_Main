@@ -21,6 +21,11 @@ public class Crop : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        useAction = null;
+    }
+
     public void Get()
     {
         // 인벤토리에 작물 추가
